@@ -6,7 +6,8 @@ Solution: Now the main problem here is that the json gives us the repeated resul
 Reasons Behind Technical Choices: 
 
 1. RecyclerView to display list of items: The RecyclerView is much more powerful, flexible and a major enhancement over ListView. We have LayoutManager which supports LinearLayoutManager, StaggeredLayoutManager and GridLayoutManager. Using RecyclerView animating the views becomes much easier.  
-2. Volley Library for network call: One of the many advantages of volley is that, you don’t need to write code for accessing network. All of this is managed by volley itself. Whenever a new network request is created, a background thread is spawned for network processing. Whose life-cycle is maintained by volley itself. With Volley you also get many more out of the box features like:
+2. SearchView.OnQueryTextListener: To implement searchview in the app and filter out the list as soon as user types the movie name.
+3. Volley Library for network call: One of the many advantages of volley is that, you don’t need to write code for accessing network. All of this is managed by volley itself. Whenever a new network request is created, a background thread is spawned for network processing. Whose life-cycle is maintained by volley itself. With Volley you also get many more out of the box features like:
     Retry Mechanism
     Caching
     Multiple Request Types
@@ -14,8 +15,8 @@ Reasons Behind Technical Choices:
         JsonArrayRequest
         StringRequest
         ImageRequest
-3. Google Maps: To display the shooting locations of the movies simply by passing the latitude, longitude. Also we can have StreetView or other views using that as per the requirements.
-4. Gson: Gson is a library that is used to convert Java Objects(in my case List<Movie>) into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.
+4. Google Maps: To display the shooting locations of the movies simply by passing the latitude, longitude. Also we can have StreetView or other views using that as per the requirements.
+5. Gson: Gson is a library that is used to convert Java Objects(in my case List<Movie>) into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.
 
 Things I could've done if I were to spent more time on the project: I would've used more animations in the app. Could've added SplashActivity at the launch of the app. And could've added Overlay with user instructions on how to use the app. 
 Also wanted to have a TabLayout on the Home page which was supposed to contain the Food Trucks problem solution in the second tab.
