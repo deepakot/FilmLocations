@@ -9,7 +9,7 @@ public class AppConstants {
     public static final String PLEASE_WAIT = "Please wait while Map info gets loaded.";
     public static final String MyPREFERENCES = "MyPrefs" ;
     public static final String FAVORITES = "Favorite";
-    public static final String LOADING = "Loading...";
+    public static final String LOADING = "Please wait while we're getting data...";
     public static final String HTLog = "HyperTrackLog";
     public static final String ERROR = "Error: ";
     public static final String DATA = "data";
